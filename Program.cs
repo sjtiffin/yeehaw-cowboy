@@ -1,7 +1,6 @@
 using System.Text.Json.Serialization;
 using yeehaw.Helpers;
 using yeehaw.Repositories;
-using yeehaw.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +22,6 @@ var builder = WebApplication.CreateBuilder(args);
 }
 
 var app = builder.Build();
-
 {
   using var scope = app.Services.CreateScope();
   var context = scope.ServiceProvider.GetRequiredService<DataContext>();

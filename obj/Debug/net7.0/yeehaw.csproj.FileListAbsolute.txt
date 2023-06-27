@@ -61,3 +61,4 @@
 /Users/saratiffin/Repos/yeehaw-cowboy/obj/Debug/net7.0/yeehaw.pdb
 /Users/saratiffin/Repos/yeehaw-cowboy/obj/Debug/net7.0/yeehaw.genruntimeconfig.cache
 /Users/saratiffin/Repos/yeehaw-cowboy/obj/Debug/net7.0/ref/yeehaw.dll
+/Users/saratiffin/Repos/yeehaw-cowboy/bin/Debug/net7.0/Npgsql.dll
