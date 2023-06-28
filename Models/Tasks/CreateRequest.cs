@@ -1,15 +1,16 @@
 namespace yeehaw.Models.Tasks;
 
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using yeehaw.Entities;
+using Newtonsoft.Json;
 
 public class CreateRequest {
   [Required]
   public string? Title { get; set; }
 
   [Required]
-  public bool? Completed { get; set; }
+  public string? Completed { get; set; }
 
   [Required]
-  public DateTime? DueDate { get; set; }
+  public string? DueDate { get; set; }
 }

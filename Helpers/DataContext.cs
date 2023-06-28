@@ -49,11 +49,11 @@ public class DataContext
         async Task _initUsers()
         {
             var sql = """
-                CREATE TABLE IF NOT EXISTS Users (
+                CREATE TABLE IF NOT EXISTS Tasks (
                     Id SERIAL PRIMARY KEY,
                     Title VARCHAR,
                     DueDate DATE,
-                    Completed BIT
+                    Completed BOOLEAN
                 );
             """;
             await connection.ExecuteAsync(sql);

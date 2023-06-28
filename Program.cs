@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using yeehaw.Helpers;
 using yeehaw.Repositories;
+using yeehaw.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,7 @@ var builder = WebApplication.CreateBuilder(args);
 
   services.AddSingleton<DataContext>();
   services.AddScoped<ITaskRepository, TaskRepository>();
+  services.AddScoped<ITaskService, TaskService>();
 }
 
 var app = builder.Build();
